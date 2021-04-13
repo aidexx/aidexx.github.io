@@ -449,5 +449,157 @@ body {
     color: rgb(221, 224, 223);
 }
 
+/* BOOK
+---------------------------------------------------------
+*/
+
+.book_block{
+    display: flex;
+    flex-direction: column;
+
+
+    width: 100%;
+    max-width: 1600px;
+
+    height: 710px;
+
+    background: url("../img/book_bg.png") center;
+    background-size: cover;
+}
+
+.book_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.book_img:nth-child(1){
+    margin-left: 40px;
+}
+.book_img:nth-child(2){
+    margin-left: 30px;
+
+}
+
+.book__form__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 450px;
+    margin-left: 100px;
+}
+
+.food__form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 200px;
+
+    margin-top: 45px;
+}
+
+
+.form__label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#cc9900;
+}
+
+.form__input{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(124, 124, 124);
+
+    align-items: start;
+    padding-left: 15px;
+    max-height: 30px;
+}
+
+.form__item:nth-child(1),
+.form__item:nth-child(3){
+    margin-right: 30px;
+}
+
+.form__item:nth-child(3),
+.form__item:nth-child(4){
+    margin-top: 25px;
+}
+
+.date__modifier{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(124, 124, 124);
+
+    align-items: start;
+    padding-left: 15px;
+    max-height: 30px;
+}
+input:focus,
+select:focus{
+    outline: none;
+    border: 2px solid #cc9900;
+}
+
+input[type="date"]:not(.has-value):before{
+    content: attr(placeholder);
+}
+
+input[type="date"]{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(124, 124, 124);
+    padding-left: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../img/calendar.jpg) center no-repeat;
+
+    border-width: thin;
+}
+
+.form__button{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    padding: 5px 62px;
+    margin-top: 30px;
+
+    background-color: rgba(200, 159, 45, 0.77);
+    border: 1px solid rgb(200, 159, 45);
+    transition: step-start;
+}
+
+.form__button:hover{
+    background-color: rgba(200, 159, 45, 0.98);
+}
+
+.form__button:disabled{
+    background-color: rgba(200, 159, 45, 0.45);
+}
 
 

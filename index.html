@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <link rel="icon" href="img/L_icon.png" type="image/icon type">
 
@@ -31,12 +32,12 @@
             <div class=""></div>
 
             <nav class="nav">
-                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="">Home</a>
                 <a class="nav__link" href="#food">About</a>
                 <a class="nav__link" href="#ingredients">Ingredients</a>
                 <a class="nav__link" href="#menu">Menu</a>
                 <a class="nav__link" href="#reviews">Reviews</a>
-                <a class="nav__link" href="#">Reservations</a>
+                <a class="nav__link" href="#book">Reservations</a>
                 <div class="header__icons">
 
                     <a class="header__icon" href="#">
@@ -298,5 +299,86 @@
     </div>
 </div>
 
+<div id="book" class="book_block">
+    <div class="container">
+        <div class="book_inner">
+            <img class="book_img" src="img/book_img_1.jpg" alt="img1">
+            <img class="book_img" src="img/book_img_2.jpg" alt="img2">
+
+            <div class="book__form__box">
+
+                <div class="food__title">Just the right food</div>
+                <div class="food_text">If you’ve been to one of our restaurants,
+                    you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
+                </div>
+                <div class="food_text">Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</div>
+
+                <form id="form" class="food__form" action="">
+                    <div class="form__item">
+                        <label class="form__label" for="name">Name</label>
+                        <input class="form__input" type="text" id="name"
+                               name="name"
+                               placeholder="your name *">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" type="email" id="email" name="email"
+                               placeholder="your email *">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label" for="date">Date</label>
+                            <input name="date" id="date"
+                                   class="form__input noicon"
+                                   type="date"
+                                   placeholder="date * &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"
+                                   onchange="this.className=(this.value!==''?'has-value':'')">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label" for="party_num">Party number</label>
+                        <select class="form__input" id="party_num" name="party_num"
+                                style="height: 30px; padding-top: 2px;">
+                            <option class="" value="placeholder" disabled
+                                    selected hidden>
+                                party
+                                number</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <input id="btn" class="form__button" type="submit"
+                            value="Book now!">
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Order placed</h2>
+        </div>
+        <div class="modal-body">
+            <p>We'll call you back!</p>
+            <p>Maybe...</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Bye!</h3>
+        </div>
+    </div>
+</div>
+
+<script src="js/validate.js"></script>
 </body>
 </html>
