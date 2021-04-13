@@ -3,6 +3,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Убираем внутренние отступы */
