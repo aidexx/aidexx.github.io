@@ -21,76 +21,103 @@ body {
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* HEADER
 ---------------------------------------------------------
 */
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: linear-gradient(rgba(0, 0, 0, .5), transparent);
-    height: 115px;
+.header__box{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(255,255,255,0));
 }
+
+.intro{
+    height: 750px;
+    background: url("../img/header_bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro .header {
+    height: 110px;
+    display: flex;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
 
 .nav {
     display: flex;
-
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px;
 }
 
 .header__inner {
+    margin-right: 20px;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 37px;
-}
-
-.header__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo__link {
     font-family: 'Yeseva One', cursive;
-    font-size: 36px;
-    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
-    padding-top: 37px;
+
+    margin-top: 35px;
+    font-size: 36.03px;
+    color: #ECECEC;
 }
 
 .nav__link {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 21px;
-    font-weight: bold;
-
-    height: 100%;
-
-    color: #ffffff;
+    color: #F8F6F4;
     text-decoration: none;
-
+    transition: color 0.2s linear;
     margin-right: 50px;
-    padding-top: 43px;
-
-    border-top: 3px solid transparent;
-}
-
-.nav__link:nth-child(6) {
-    margin-right: 20px;
+    padding-top: 45px;
 }
 
 .nav__link:hover {
-    border-color: #cbc8bf;
+    border-top: 3px solid rgba(255, 255, 255, 0.7);
+    padding-top: 42px;
+}
+
+.header__icons {
+    flex-wrap: nowrap;
+    margin-left: -40px;
+    margin-top: 45px;
+    font-size: 21px;
+
+    text-decoration: none;
 }
 
 .header__icon {
-    font-size: 21px;
-    margin-right: 15px;
-    text-decoration: none;
-    padding-top: 34px;
+    padding-left: 18px;
+    color: rgb(218, 179, 62);
+    transition: transform .1s linear;
 }
+
+.header__icon:hover{
+    transform: scale(1.2);
+}
+.icon__style{
+    padding-left: 18px;
+    color: rgb(218, 179, 62);
+    transition: transform .1s linear;
+}
+
 
 /* TOP
 ---------------------------------------------------------
@@ -111,6 +138,7 @@ body {
     width: 100%;
     max-width: 990px;
     margin: 0 auto;
+    padding-top: 125px;
 }
 
 .top__title {
