@@ -879,13 +879,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 
-@media screen and (max-width: 530px) {
-    .reviews_content{
-        font-size: 17px;
+@media screen and (max-width: 570px){
+    .image__box{
+        display: none;
     }
 
     .book_block{
-        height: 1400px;
+        height: 1000px;
     }
 
     .food__form{
@@ -903,6 +903,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .form__item:nth-child(3),
     .form__item:nth-child(4){
         margin: 45px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .reviews_content{
+        font-size: 17px;
     }
 
     .menu{
@@ -952,10 +958,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media screen and (max-width: 375px) {
     .block__content{
         font-size: 13px;
-    }
-
-    .book_block{
-        height: 1500px;
     }
 }
 
