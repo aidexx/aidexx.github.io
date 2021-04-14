@@ -218,6 +218,7 @@ a {
 */
 
 .food__block {
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -276,6 +277,7 @@ a {
     display: flex;
     flex-direction: column;
 
+    width: 100%;
     height: 758px;
 
     background: url("../img/ingredients_bg.jpg") center no-repeat;
@@ -343,6 +345,7 @@ a {
     /*display: flex;
     flex-direction: column;
     align-items: flex-start;*/
+    width: 100%;
     height: 994px;
 
     background: url("../img/menu_bg.jpg") center no-repeat;
@@ -468,6 +471,7 @@ a {
 .reviews__block {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 758px;
 
     background: url("../img/reviews_bg.jpg") center no-repeat;
@@ -678,6 +682,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 */
 
 .footer {
+    width: 100%;
     height: 320px;
 
     background: url("../img/footer_bg.jpg") center;
@@ -849,6 +854,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (max-width: 700px) {
+
+    .reviews_content{
+        font-size: 20px;
+    }
     .top__links{
         margin: 100px 50px 0;
     }
@@ -871,6 +880,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (max-width: 530px) {
+    .reviews_content{
+        font-size: 17px;
+    }
+
     .book_block{
         height: 1400px;
     }
