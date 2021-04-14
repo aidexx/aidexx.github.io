@@ -697,8 +697,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .block__icons{
+    width: 100%;
+    max-width: 135px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.footer__icon{
+
 }
 
 
