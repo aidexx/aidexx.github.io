@@ -616,4 +616,62 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: rgba(200, 159, 45, 0.45);
 }
 
+/* FOOTER
+---------------------------------------------------------
+*/
+
+.footer{
+    height: 320px;
+
+    background: url("../img/footer_bg.jpg") center;
+    background-size: cover;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 52px;
+}
+
+.footer__block{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    width: 371px;
+    height: 218px;
+
+    padding: 10px;
+}
+
+.block__title{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 21px;
+    text-align: center;
+    color: rgb(254, 254, 254);
+}
+
+.block__title:after{
+    content: url("../img/divider_footer.png");
+}
+
+.block__content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #a0a0a0;
+    line-height: 1.5;
+
+    text-align: center;
+
+}
+
+.block__icons{
+    display: flex;
+    justify-content: center;
+}
+
+
 
