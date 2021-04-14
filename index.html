@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans:wght@400;700&family=Yeseva+One&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/qss6ljs.css">
-    <script src="https://kit.fontawesome.com/07a095d444.js"
+    <link rel="stylesheet" href="http_use.typekit.net_qss6ljs.css">
+    <script src="http_kit.fontawesome.com_07a095d444.js"
             crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -58,38 +58,35 @@
 
     <div class="container">
         <div class="top__inner">
-            <h1 class="top__title">the right ingredients for the right food</h1>
+            <h1 class="top__title">the right ingredients</h1>
+            <h1 class="top__title top-title--last">for the right food</h1>
 
             <div class="top__links">
-                <a class="btn btn--black" href="#">Book a table</a>
+                <a class="btn btn--black" href="#book">Book a table</a>
                 <a class="btn btn--transparent" href="#menu">See the menu</a>
             </div>
         </div>
     </div>
 </div>
 
-<!--
-<div id="top" class="top">
-
-</div>
--->
-
 
 <div id="food" class="food__block">
     <div class="container">
-        <div class="food__inner">
-            <h1 class="food__title">Just the right food</h1>
-            <div class="food_text">If you’ve been to one of our restaurants,
-                you’ve seen – and tasted – what keeps our customers coming back
-                for more. Perfect materials and freshly baked food, delicious
-                Lambda cakes, muffins, and gourmet coffees make us hard to
-                resist! Stop in today and check us out!
-            </div>
-            <div class="cook__img">
+        <div class="food__container">
+            <div class="food__inner">
+                <h1 class="food__title">Just the right food</h1>
+                <div class="food_text">If you’ve been to one of our restaurants,
+                    you’ve seen – and tasted – what keeps our customers coming back
+                    for more. Perfect materials and freshly baked food, delicious
+                    Lambda cakes, muffins, and gourmet coffees make us hard to
+                    resist! Stop in today and check us out!
+                </div>
+                <div class="cook__img">
 
+                </div>
             </div>
+
         </div>
-
     </div>
 </div>
 
@@ -113,6 +110,7 @@
         </div>
     </div>
 </div>
+
 
 <div id="menu" class="menu">
     <div class="container">
@@ -324,74 +322,82 @@
     </div>
 </div>
 
+
 <div id="book" class="book_block">
     <div class="container">
         <div class="book_inner">
-            <img class="book_img" src="img/book_img_1.jpg" alt="img1">
-            <img class="book_img" src="img/book_img_2.jpg" alt="img2">
-
-            <div class="book__form__box">
-
-                <div class="food__title">Just the right food</div>
-                <div class="food_text">If you’ve been to one of our restaurants,
-                    you’ve seen – and tasted – what keeps our customers coming
-                    back for more. Perfect materials and freshly baked food.
-                </div>
-                <div class="food_text">Delicious Lambda cakes, muffins, and
-                    gourmet coffees make us hard to resist! Stop in today and
-                    check us out! Perfect materials and freshly baked food.
-                </div>
-
-                <form id="form" class="food__form" action="">
-                    <div class="form__item">
-                        <label class="form__label" for="name">Name</label>
-                        <input class="form__input" type="text" id="name"
-                               name="name"
-                               placeholder="your name *">
-                    </div>
-
-                    <div class="form__item">
-                        <label class="form__label" for="email">Email</label>
-                        <input class="form__input" type="email" id="email"
-                               name="email"
-                               placeholder="your email *">
-                    </div>
-
-                    <div class="form__item">
-                        <label class="form__label" for="date">Date</label>
-                        <input name="date" id="date"
-                               class="form__input noicon"
-                               type="date"
-                               placeholder="date * &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"
-                               onchange="this.className=(this.value!==''?'has-value':'')">
-                    </div>
-
-                    <div class="form__item">
-                        <label class="form__label" for="party_num">Party
-                            number</label>
-                        <select class="form__input" id="party_num"
-                                name="party_num"
-                                style="height: 30px; padding-top: 2px;">
-                            <option class="" value="placeholder" disabled
-                                    selected hidden>
-                                party
-                                number
-                            </option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-
-                    <input id="btn" class="form__button" type="submit"
-                           value="Book now!">
-
-                </form>
-
+            <div class="image__box">
+                <img class="book_img" src="img/book_img_1.jpg" alt="img1">
+                <img class="book_img" src="img/book_img_2.jpg" alt="img2">
             </div>
+
+            .
+            <div class="book__form__box">
+                <div class="book__form__box__content">
+
+                    <div class="food__title">Just the right food</div>
+                    <div class="food_text">If you’ve been to one of our restaurants,
+                        you’ve seen – and tasted – what keeps our customers coming
+                        back for more. Perfect materials and freshly baked food.
+                    </div>
+                    <div class="food_text">Delicious Lambda cakes, muffins, and
+                        gourmet coffees make us hard to resist! Stop in today and
+                        check us out! Perfect materials and freshly baked food.
+                    </div>
+
+                    <form id="form" class="food__form" action="">
+                        <div class="form__item">
+                            <label class="form__label" for="name">Name</label>
+                            <input class="form__input" type="text" id="name"
+                                   name="name"
+                                   placeholder="your name *">
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input" type="email" id="email"
+                                   name="email"
+                                   placeholder="your email *">
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__label" for="date">Date</label>
+                            <input name="date" id="date"
+                                   class="form__input noicon"
+                                   type="date"
+                                   placeholder="date * &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"
+                                   onchange="this.className=(this.value!==''?'has-value':'')">
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__label" for="party_num">Party
+                                number</label>
+                            <select class="form__input" id="party_num"
+                                    name="party_num"
+                                    style="height: 30px; padding-top: 2px;">
+                                <option class="" value="placeholder" disabled
+                                        selected hidden>
+                                    party
+                                    number
+                                </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <input id="btn" class="form__button" type="submit"
+                               value="Book now!">
+
+                    </form>
+
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+
 
 <div id="footer" class="footer">
     <div class="container">
@@ -474,6 +480,7 @@
         </div>
     </div>
 </div>
+
 
 <div id="myModal" class="modal">
     <!-- Modal content -->
