@@ -243,10 +243,11 @@ body {
     height: 557px;
     max-height: 557px;
 
+    position: relative;
+
     /*margin : 110px 110px 100px 100px;
     */
-    margin-left: 640px;
-    margin-top: 100px;
+    margin: 100px 0px 40px auto;
     padding: 10px 70px;
 
     background: url("../img/ingredients_content_bg.png") center no-repeat;
@@ -293,9 +294,9 @@ body {
 
 
 .menu {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start;*/
     height: 994px;
 
     background: url("../img/menu_bg.jpg") center no-repeat;
@@ -310,35 +311,47 @@ body {
     justify-content: flex-start;
 }
 
+.menu__inner{
+    display: flex;
+    flex-flow: row wrap;
+
+    height: 994px;
+
+}
+
+.menu__column{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
 .menu__block {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    height: auto;
 
     width: 570px;
-    padding: 100px 0 40px 40px;
+    padding: 100px 0 0 40px;
     text-align: center;
 }
 
-.menu__block:nth-child(1)
-{
+.menu__block[id="appetizers"] {
     margin-left: 40px;
 }
 
-.menu__block:nth-child(2)
-{
+.menu__block[id="salads"] {
     margin-left: 40px;
-    padding-top: 10px;
+    padding-top: 55px;
 }
 
-.menu__block:nth-child(3)
-{
+.menu__block[id="starters"] {
     margin-left: 30px;
 }
 
-.menu__block:nth-child(4)
-{
+.menu__block[id="main"] {
     margin-left: 30px;
-    padding-top: 10px;
+    padding-top: 55px;
 }
 
 .menu_title {
@@ -365,29 +378,31 @@ body {
 }
 
 .menu__item--special {
-    border: 1px solid #cc9900;
+    border: 1px solid rgb(200, 159, 45);
 }
 
-.menu__box{
+
+.menu__box {
     margin: 0 22px;
     position: relative;
 }
 
-.menu__box--special{
+.menu__box--special {
     margin: 0 22px;
     position: relative;
-    top: -10px;
 }
 
 .menu__box--special::before {
     display: flex;
     flex-direction: row-reverse;
     content: url("../img/special.jpg");
-    position: relative;
-    bottom: -8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 22px;
 }
 
-.menu__item__title{
+.menu__item__title {
     display: flex;
     justify-content: space-between;
 
@@ -404,7 +419,7 @@ body {
 ---------------------------------------------------------
 */
 
-.reviews__block{
+.reviews__block {
     display: flex;
     flex-direction: column;
     height: 758px;
@@ -413,7 +428,7 @@ body {
     background-size: cover;
 }
 
-.reviews__inner{
+.reviews__inner {
     width: 100%;
     max-width: 770px;
 
@@ -421,16 +436,18 @@ body {
     max-height: 557px;
 
     /*margin : 110px 110px 100px 100px;
-    */
-    margin-left: 240px;
     margin-top: 100px;
+    */
+    margin: 100px auto;
+
+
     padding: 10px 70px;
 
     background: url("../img/reviews_content_bg.png") center no-repeat;
     background-size: cover;
 }
 
-.reviews_content{
+.reviews_content {
     font-family: 'Gentium Book Basic', serif;
     font-size: 25px;
     font-weight: bold;
@@ -439,7 +456,7 @@ body {
     color: rgb(221, 224, 223);
 }
 
-.reviews_author{
+.reviews_author {
     padding-top: 40px;
 
     font-family: 'Lato', sans-serif;
@@ -453,36 +470,33 @@ body {
 ---------------------------------------------------------
 */
 
-.book_block{
+.book_block {
     display: flex;
     flex-direction: column;
-
-
     width: 100%;
-    max-width: 1600px;
-
     height: 710px;
 
     background: url("../img/book_bg.png") center;
     background-size: cover;
 }
 
-.book_inner{
+.book_inner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 100px 0;
 }
 
-.book_img:nth-child(1){
+.book_img:nth-child(1) {
     margin-left: 40px;
 }
-.book_img:nth-child(2){
+
+.book_img:nth-child(2) {
     margin-left: 30px;
 
 }
 
-.book__form__box{
+.book__form__box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -492,16 +506,15 @@ body {
     margin-left: 100px;
 }
 
-.food__form{
+.food__form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 
     width: 100%;
-
 }
 
-.form__item{
+.form__item {
     display: flex;
     flex-direction: column;
 
@@ -512,14 +525,14 @@ body {
 }
 
 
-.form__label{
+.form__label {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color:#cc9900;
+    color: #cc9900;
 }
 
-.form__input{
+.form__input {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: italic;
@@ -531,16 +544,16 @@ body {
 }
 
 .form__item:nth-child(1),
-.form__item:nth-child(3){
+.form__item:nth-child(3) {
     margin-right: 30px;
 }
 
 .form__item:nth-child(3),
-.form__item:nth-child(4){
+.form__item:nth-child(4) {
     margin-top: 25px;
 }
 
-.date__modifier{
+.date__modifier {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: italic;
@@ -550,17 +563,18 @@ body {
     padding-left: 15px;
     max-height: 30px;
 }
+
 input:focus,
-select:focus{
+select:focus {
     outline: none;
     border: 2px solid #cc9900;
 }
 
-input[type="date"]:not(.has-value):before{
+input[type="date"]:not(.has-value):before {
     content: attr(placeholder);
 }
 
-input[type="date"]{
+input[type="date"] {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: italic;
@@ -577,7 +591,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-width: thin;
 }
 
-.form__button{
+.form__button {
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
     vertical-align: top;
@@ -594,11 +608,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     transition: step-start;
 }
 
-.form__button:hover{
+.form__button:hover {
     background-color: rgba(200, 159, 45, 0.98);
 }
 
-.form__button:disabled{
+.form__button:disabled {
     background-color: rgba(200, 159, 45, 0.45);
 }
 
